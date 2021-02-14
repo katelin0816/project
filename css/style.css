@@ -873,9 +873,23 @@ a.btn_back {
     top: 20px;
 }
 
-.video {
-    display: flex;
-    justify-content: center;
-    height: 90vh;
-    margin-top: 5vh;
+.video{
+    width: 100%;
 }
+
+.video video{
+    margin: 70px auto 0 auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
