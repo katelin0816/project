@@ -498,13 +498,23 @@ body.open:after {
     }
 
     .home_text p.bold_text {
-        margin-top: 10px;
+        margin-top: 8px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .home_text p {
         width: 100%;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .home_text h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .home_text p {
+        font-size: 12px;
+        line-height: 18px;
     }
 }
 
