@@ -67,6 +67,11 @@ header .header_logo {
     display: flex;
     align-items: center;
 }
+header .header_logo a{
+    display: block;
+    width: 28px;
+    height: 28px;
+}
 
 @media only screen and (max-width: 1024px) {
     header .flex_content {
@@ -381,7 +386,7 @@ body.open:after {
 
 .b-container.open .b-bun--top {
     background: #000;
-    top: 9px;
+    top: 7px;
     transform: rotate(45deg);
 }
 
@@ -391,7 +396,7 @@ body.open:after {
 
 .b-container.open .b-bun--bottom {
     background: #000;
-    top: 5px;
+    top: 3px;
     transform: rotate(-45deg);
 }
 
