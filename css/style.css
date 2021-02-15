@@ -479,7 +479,7 @@ body.open:after {
 
 @media only screen and (max-width: 900px) {
     .home_text {
-        padding: 10px 10px;
+        padding: 20px 0 10px 0;
     }
 
     .home_text h1,
@@ -509,7 +509,7 @@ body.open:after {
 }
 @media only screen and (max-width: 420px) {
     .home_text h1 {
-        font-size: 36px;
+        font-size: 34px;
         line-height: 40px;
     }
     .home_text p {
