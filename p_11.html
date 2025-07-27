@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <!--JS link-->
-    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body ontouchstart="" class="bg_dark">
@@ -140,10 +141,10 @@
     <!--quick nav-->
     <div class="quick_nav">
         <div class="content">
-            <a href="p_10.html">
+            <a href="#" class="prev">
                 <img class="left_item" src="images/icon_prev.svg">Prev
             </a>
-            <a href="p_12.html">
+            <a href="#" class="next">
                 Next<img class="right_item" src="images/icon_next.svg">
             </a>
         </div>
@@ -173,22 +174,7 @@
         </ul>
     </footer>
 
-    <script>
-    'use strict';
 
-    (function() {
-        var body = document.body;
-        var burgerMenu = document.getElementsByClassName('b-menu')[0];
-        var burgerContain = document.getElementsByClassName('b-container')[0];
-        var burgerNav = document.getElementsByClassName('b-nav')[0];
-
-        burgerMenu.addEventListener('click', function toggleClasses() {
-            [body, burgerContain, burgerNav].forEach(function(el) {
-                el.classList.toggle('open');
-            });
-        }, false);
-    })();
-    </script>
 
 </body>
 

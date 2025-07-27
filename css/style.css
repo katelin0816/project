@@ -445,7 +445,7 @@ body.open:after {
 .home_text {
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 10px;
+    padding: 40px 0;
 }
 
 .home_text h1 {
@@ -453,10 +453,6 @@ body.open:after {
     line-height: 62px;
     font-weight: 700;
     padding-right: 70px;
-}
-
-.home_text h1 {
-    width: auto;
 }
 
 .home_text div {
@@ -533,6 +529,8 @@ body.open:after {
 .cover.list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left:  -10px;
 }
 
 .cover.list .col_4 {
@@ -640,7 +638,7 @@ body.open:after {
 .project_index a .wording {
     position: absolute;
     text-align: left;
-    bottom: 0px;
+    bottom: 5px;
     text-transform: uppercase;
     color: #000;
 }
@@ -666,6 +664,25 @@ body.open:after {
 }
 
 
+/* ---------- PROJECT Banner AD ---------- */
+.ad_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 170px;
+}
+
+@media screen and (max-width: 920px) {
+    .ad_grid{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .ad_grid{
+        grid-template-columns: 1fr;
+    }
+}
 
 
 /* ---------- LOGOS ---------- */
