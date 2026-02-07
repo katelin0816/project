@@ -1,6 +1,6 @@
 
 
-fetch('../dropmenu.html')
+fetch('/project/dropmenu.html')
   .then(res => res.text())
   .then(html => {
     const menu = document.getElementById('dropmenu');
@@ -17,7 +17,7 @@ fetch('../dropmenu.html')
   .catch(err => console.error(err));
 
 
-fetch('../burger-menu.html')
+fetch('/project/burger-menu.html')
   .then(res => res.text())
   .then(html => {
     const menu = document.getElementById('burger-menu');
