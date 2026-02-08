@@ -186,14 +186,11 @@ nav .btn.svgicon a:hover {
 
 
 /* ---------- loading ---------- */
-#page-loading {
-    position: fixed;
-    inset: 0;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
+#img-loading {
+    text-align: center;
+    padding: 24px;
+    color: #999;
+    font-size: 14px;
   }
 
 

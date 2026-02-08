@@ -32,24 +32,36 @@ $(document).ready(function () {
     });
 
     //loading//
-    const images = document.images;
-    let loaded = 0;
-    const total = images.length;
+    const loadingEl = document.getElementById('img-loading');
+    const imgs = Array.from(document.images);
 
-    function checkDone() {
-    loaded++;
-    if (loaded === total) {
-        document.getElementById('page-loading').style.display = 'none';
-    }
+    // 只計算「實際會載的圖片」（排除 lazy 還沒進 viewport 的）
+    const loadingImgs = imgs.filter(img =>
+    img.loading !== 'lazy' || img.getBoundingClientRect().top < window.innerHeight
+    );
+
+    let remaining = loadingImgs.length;
+
+    if (remaining === 0) {
+    loadingEl.style.display = 'none';
     }
 
-    Array.from(images).forEach(img => {
+    loadingImgs.forEach(img => {
     if (img.complete) {
-        checkDone();
+        done();
     } else {
-        img.addEventListener('load', checkDone);
-        img.addEventListener('error', checkDone);
+        img.addEventListener('load', done, { once: true });
+        img.addEventListener('error', done, { once: true });
     }
     });
+
+    function done() {
+    remaining--;
+    if (remaining === 0) {
+        loadingEl.style.display = 'none';
+    }
+    }
+
+
 
 })();
