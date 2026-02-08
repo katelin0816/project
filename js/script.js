@@ -31,4 +31,25 @@ $(document).ready(function () {
         return false;
     });
 
+    //loading//
+    const images = document.images;
+    let loaded = 0;
+    const total = images.length;
+
+    function checkDone() {
+    loaded++;
+    if (loaded === total) {
+        document.getElementById('page-loading').style.display = 'none';
+    }
+    }
+
+    Array.from(images).forEach(img => {
+    if (img.complete) {
+        checkDone();
+    } else {
+        img.addEventListener('load', checkDone);
+        img.addEventListener('error', checkDone);
+    }
+    });
+
 })();
