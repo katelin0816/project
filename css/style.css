@@ -190,14 +190,14 @@ nav .btn.svgicon a:hover {
 
 
 /* ---------- loading ---------- */
-#loading {
+#img-loading {
     text-align: center;
     padding: 12px 20px;
     color: #bfbfbf;
     font-size: 1.4rem;
     letter-spacing: 1px;
     position: fixed;
-    top: 90px;
+    top: 82px;
     background: rgba(74, 74, 74, 0.8);
     border-radius: 90px;
     transform: translate(-50%,-50%)!important;
