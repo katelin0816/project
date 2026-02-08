@@ -3,9 +3,11 @@
 body.bg_light {
     background: #FFF;
 }
+
 body.bg_gray {
     background: #F5F5F5;
 }
+
 body.bg_dark {
     background: #000;
 }
@@ -67,7 +69,8 @@ header .header_logo {
     display: flex;
     align-items: center;
 }
-header .header_logo a{
+
+header .header_logo a {
     display: block;
     width: 28px;
     height: 28px;
@@ -107,8 +110,8 @@ nav .btn a {
     letter-spacing: 1px;
     font-weight: 600;
     display: flex;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     height: 100%;
 }
 
@@ -169,6 +172,7 @@ nav .btn:hover a {
     background: -webkit-linear-gradient(to right, #FFA22E, #f1145d);
     color: #FFF;
 }
+
 nav .btn.svgicon a {
     fill: black;
 }
@@ -188,33 +192,50 @@ nav .btn.svgicon a:hover {
 /* ---------- loading ---------- */
 #img-loading {
     text-align: center;
-    padding: 12px;
-    color: #999;
+    padding: 12px 20px;
+    color: #bfbfbf;
     font-size: 16px;
-  }
-  
-  .dots span {
+    position: fixed;
+    top: 90px;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 90px;
+    transform: translate(-50%,-50%)!important;
+    left: 50%;
+}
+
+.dots span {
     animation: blink 1.4s infinite both;
-  }
-  
-  .dots span:nth-child(2) {
+}
+
+.dots span:nth-child(2) {
     animation-delay: 0.2s;
-  }
-  
-  .dots span:nth-child(3) {
+}
+
+.dots span:nth-child(3) {
     animation-delay: 0.4s;
-  }
-  
-  @keyframes bounce {
-    0% { transform: translateY(0); opacity: .3; }
-    50% { transform: translateY(-4px); opacity: 1; }
-    100% { transform: translateY(0); opacity: .3; }
-  }
-  
-  .dots span {
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+        opacity: .3;
+    }
+
+    50% {
+        transform: translateY(-4px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: .3;
+    }
+}
+
+.dots span {
     animation: bounce 1.2s infinite;
-  }
-  
+}
+
 
 
 
@@ -476,9 +497,11 @@ body.open:after {
 .main {
     padding: 70px 0 60px 0;
 }
+
 .main.project {
     padding: 80px 0 60px 0;
 }
+
 .main.separate img {
     margin: 30px 0;
 }
@@ -487,13 +510,16 @@ body.open:after {
     .main {
         padding: 60px 0 20px 0;
     }
+
     .main.project {
         padding: 55px 0 0 0;
     }
+
     .main.separate img {
         margin: 20px 0;
     }
 }
+
 @media only screen and (max-width: 1024px) {
     .main.project {
         padding: 49px 0 0 0;
@@ -564,21 +590,25 @@ body.open:after {
         margin-top: 8px;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .home_text {
         padding: 20px 0 10px 0;
     }
 }
+
 @media only screen and (max-width: 600px) {
     .home_text p {
         width: 100%;
     }
 }
+
 @media only screen and (max-width: 420px) {
     .home_text h1 {
         font-size: 34px;
         line-height: 40px;
     }
+
     .home_text p {
         font-size: 12px;
         line-height: 18px;
@@ -592,7 +622,7 @@ body.open:after {
     display: flex;
     flex-wrap: wrap;
     margin-right: -10px;
-    margin-left:  -10px;
+    margin-left: -10px;
 }
 
 .cover.list .col_4 {
@@ -727,7 +757,7 @@ body.open:after {
 
 
 /* ---------- PROJECT Banner AD ---------- */
-.ad_grid{
+.ad_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -735,13 +765,13 @@ body.open:after {
 }
 
 @media screen and (max-width: 920px) {
-    .ad_grid{
+    .ad_grid {
         padding: 0;
     }
 }
 
 @media screen and (max-width: 540px) {
-    .ad_grid{
+    .ad_grid {
         grid-template-columns: 1fr;
     }
 }
@@ -749,12 +779,13 @@ body.open:after {
 
 /* ---------- LOGOS ---------- */
 
-.cover.list .logo{
+.cover.list .logo {
     width: 100%;
     background: #FFF;
     padding: 25px;
 }
-.cover.list .logo .logo_img{
+
+.cover.list .logo .logo_img {
     width: 100%;
     height: 280px;
     display: flex;
@@ -762,7 +793,8 @@ body.open:after {
     align-items: center;
     padding-bottom: 10px;
 }
-.cover.list .logo p{
+
+.cover.list .logo p {
     font-size: 1rem;
     line-height: 1;
     text-align: center;
@@ -976,17 +1008,18 @@ a.btn_back {
     top: 10px;
 }
 
-.video{
+.video {
     width: 100%;
 }
 
-.video video{
+.video video {
     margin: 40px auto 0 auto;
     display: block;
     height: 90vh;
 }
+
 @media only screen and (max-width: 1200px) {
-    .video video{
+    .video video {
         height: auto;
         width: 320px;
     }
@@ -1023,11 +1056,11 @@ a.btn_back {
 }
 
 .video_responsive {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
-    
+
 
 @media only screen and (max-width: 1200px) {
     .waterfall {
